@@ -1,23 +1,27 @@
-<html>
+ï»¿<html>
 <head>
-<meta charset="utf8"/>
-<title>µÇÂ¼</title>
+	<link href="static/css/login.css" rel="stylesheet"/>
+	<meta content="text/html; charset=utf8" http-equiv="Content-Type">
+	<meta http-equiv="Content-Language" contect="zh-CN">
+<title>ç™»å½•</title>
 </head>
 
-<body bgcolor="DA70D6">
+<body>
 	<div>
 		<center>
-			<h1>µÇÂ¼</h1>
+			<h1>ç™»å½•</h1>
 		</center>
 	</div>
 	<div>
 		<center>
 		
-			<label for="login_field">ÓÃ»§Ãû»òÓÊÏä</label><p>
+			<label for="login_field">ç”¨æˆ·åæˆ–é‚®ç®±</label><p>
 			<input class="input-block" id="login_field" name="user[name/email]" size="30" type="text" /><p>
-			<label for="password">ÃÜÂë<a href="/sessions/forgot_password">(Íü¼ÇÃÜÂë)</a></label><p>
+			<label for="password">å¯†ç </label><p>
 			<input class="input-block" id="password" name="password" size="30" type="password" /><p>
-			<input class="button" name="commit" type="submit" value="µÇÂ¼" />
+			<input class="button" name="commit" type="submit" value="ç™»å½•" />
+			<a href="/registration" button class="button" type="submit">æ³¨å†Œ</button></a><p>
+			
 		
 		</center>
 	</div>

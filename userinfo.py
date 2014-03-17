@@ -1,9 +1,9 @@
-from bottle import route, template, run, debug
+﻿from bottle import route, template, run, debug
  
-@route('/')
+@route('/userinfo')
 def b():
 
-	return template('userinfo',encoding="utf8")
+	return template('userinfo')
 
 
 debug(True)  

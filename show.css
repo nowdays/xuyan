@@ -1,0 +1,7 @@
+body{
+	background-image:url("/static/image/12.jpg");
+}
+td{
+	border:red 1px solid;
+	color:red;
+}

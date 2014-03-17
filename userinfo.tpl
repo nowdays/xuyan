@@ -1,23 +1,24 @@
-<html>
+ï»¿<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>ÓÃ»§»ù±¾ÐÅÏ¢</title>
+	<meta content="text/html; charset=utf8" http-equiv="Content-Type">
+	<meta http-equiv="Content-Language" contect="zh-CN">
+<title>ç”¨æˆ·åŸºæœ¬ä¿¡æ¯</title>
 </head>
 
 <body bgcolor="AFEEEE">
 	<div>
 	<center>
 	
-		<h2>ÓÃ»§»ù±¾ÐÅÏ¢</h2>
-		<label for="user_name">ÓÃ»§Ãû</label><p>
+		<h2>ç”¨æˆ·åŸºæœ¬ä¿¡æ¯</h2>
+		<label for="user_name">ç”¨æˆ·å</label><p>
 		<input class="long" id="user_name" name="user[name]" size="30" type="text" /><p>
-		<label for="user_email">ÓÊÏä</label><p>
+		<label for="user_email">é‚®ç®±</label><p>
 		<input class="long" id="user_email" name="user[email]" size="30" type="text" /><p>
-		<label for="user_company">¹¤×÷µØ</label><p>
+		<label for="user_company">å·¥ä½œåœ°</label><p>
 		<input class="long" id="user_company" name="user[company]" size="30" type="text" /><p>
-		<label for="user_location">ËùÔÚµØ</label><p>
+		<label for="user_location">æ‰€åœ¨åœ°</label><p>
 		<input class="long" id="user_location" name="user[location]" size="30" type="text" /><p>
-		<button type="submit" class="button primary">±£´æÉèÖÃ</button>
+		<button type="submit" class="button primary">ä¿å­˜è®¾ç½®</button>
 	</center>
 	</div>
 
