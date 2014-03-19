@@ -2,21 +2,56 @@
 import sqlite3
 import static
 
+
 class User:
 	def __init__(self, user_username, user_email, user_password):
 		self.user_username = user_username
 		self.user_email = user_email
 		self.user_password = user_password
 
- 
-#@route('/')
-#def login():
-	#return template('login')
-	
-
+		
 @route('/')
+def login():
+	return template('login')
+
+	
+@route('/registration')
 def registration():
 	return template('registration')
+	
+	
+@route('/retrievepassword')
+def registration():
+	password=getpassword()
+	return template('retrievepassword',user_password=password)
+
+
+@route('/main')
+def userinfo():
+	return template('main')
+
+	
+@route('/userinfo')
+def userinfo():
+	return template('userinfo')
+	
+	
+@route('/modifypassword')
+def modifypassword():
+	return template('modifypassword')
+
+	
+@route('/getpassword')
+def getpassword():
+	username = request.GET.username
+	email = request.GET.email
+	con = sqlite3.connect("user.db")
+	cur = con.cursor()
+	sql = """
+	select user_password from user where user_username="name" and user_email="email"
+	"""
+	cur.execute(sql)
+	con.commit()
 	
 	
 @route("/initdb")
@@ -31,16 +66,16 @@ def initdb():
 		)"""
 		cur.execute(sql)
 		con.commit()
-		redirect('/')
+		redirect('/registration')
 	
 	
 def insertdb(userobj):
 	con = sqlite3.connect("user.db")
 	cur = con.cursor()
 	sql = """
-	insert into user(user_username, user_email, user_password) values('"""
-	+str(userobj.user_username)+"""','"""+str(userobj.user_email)+"""','"""
-	+str(userobj.user_password)+"""')"""
+insert into user(user_username, user_email, user_password) values('"""+str(userobj.user_username)+"""',
+'"""+str(userobj.user_email)+"""','"""+str(userobj.user_password)+"""')
+	"""
 	cur.execute(sql)
 	con.commit()
 	

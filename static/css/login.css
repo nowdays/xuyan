@@ -1,0 +1,69 @@
+body{
+	background-image:url("/static/image/07.jpg");
+}
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 680px;
+	height:550px;
+    text-align: center;
+}
+#main {
+	float: center;
+	width: 60%;
+}
+#main .centerbox {
+    float: center;
+    width: 560px;
+    height: 400px;
+}
+.tit{
+	float:left;
+	text-align: left;
+	width:100%;
+	height:80px;
+}
+.content{
+	float:center;
+	height:170px;
+	width:100%;
+}
+.content ul{
+	float: center;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#menu {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+#menu .tiao {
+	float: left;
+	width: 2px;
+	height: 12px;
+	overflow: hidden;
+	margin-top: 8px;
+	background:#8B4513;
+}
+#menu ul {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#menu li {
+	float: left;
+	text-align: center;
+	width: 80px;
+	font-size: 12px;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+}
+#menu a {
+	text-decoration: none;
+	color: Brown;
+	font: 13px Arial, 宋体;
+}
